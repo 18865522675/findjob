@@ -1,0 +1,123 @@
+@primaryColor:#71c9c0;
+.v-home{
+    .v-home-center{
+        background:rgba(243,243,243,1);
+    }
+    .homeContent{
+        width:1200px;
+        margin: 0 auto;
+        margin-top: 30px;
+        justify-content: space-between;
+        .homeContent-left{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .homeContent-left-item{
+            font-family:PingFang-SC-Heavy;
+            .comBoxStyle();
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: left;
+            color:rgba(59,59,59,1);
+            background: white;
+            &>.bigTitle{
+                font-size: 22px;
+                font-weight:800;
+            }
+            &>.subTitle{
+                font-size: 16px;
+                display: inline-block;
+                margin-bottom: 10px;
+                letter-spacing: 3px;     
+            }
+            .rangeBox{
+                display: flex;
+                flex-wrap: wrap;
+                div{
+                    margin-right: 20px;
+                    color:rgba(59,59,59,1);
+                    font-size: 15px;
+                    line-height: 40px;       
+                    cursor: pointer;           
+                }
+            }
+        }
+
+
+        .homeContent-right{
+            margin-left: 20px;
+            width: 580px!important;
+            background: white;
+            box-sizing: border-box;
+            padding: 15px 0;
+            img{
+                width:80px;
+            }
+            .homeContent-welcome{
+                color:rgba(34,34,34,1);
+                line-height: 60px;
+                font-family:PingFang-SC-Medium;
+            }
+        }
+        .homeContent-right-btns{
+            padding: 0 50px;
+            .el-button{
+                width: 100%;
+                &.el-button--success{
+                    .setBgBorder(@primaryColor,@primaryColor);
+                }
+            }
+            .el-button--default{
+                .setBgBorder(rgba(216,216,216,1),rgba(216,216,216,1),white)
+            }      
+        }
+        .homeContent-right-needs{
+            padding: 0 15px;
+            text-align: left;
+        }
+        .homeContent-right-need{
+            .homeContent-right-need-border{
+                border-left:2px solid #71C9C0;
+                padding-left: 5px;
+                font-size: 14px;
+                font-weight: 600
+            }
+            .homeContent-right-need-con{
+                justify-content: space-between;
+                &>.el-input{
+                    width: 170px; 
+                    .el-input__inner{
+                        height: 30px;
+                    }              
+                }
+                .el-button{
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+.comBoxStyle(@bg:rgba(255,255,255,1),@shadow:0px 2px 12px 2px rgba(226,226,226,0.5)){
+    background: @bg;
+    box-shadow: @shadow
+}
+
+.setBgBorder(@bg:@primaryColor,@bdColor:@primaryColor,@color:white,@borderR:30px){
+    background: @bg!important;
+    border-color: @bdColor!important;
+    border-radius: @borderR;
+    color:@color
+}
+.el-button.primaryColorBtn{
+    // background: @primaryColor !important;
+    // color:white;
+    .setBgBorder(@primaryColor,@primaryColor,white,4px)
+}
+.primaryColorBtn.isPlain{
+    background: white!important;
+    color:@primaryColor;
+    .setBgBorder(white,@primaryColor,@primaryColor,4px)
+}

@@ -1,0 +1,42 @@
+.v-header{
+    .v-header-center{
+        font-size:16px;
+        font-family:PingFang-SC-Regular;
+        font-weight:400;
+        width: 1200px;
+        height: 78px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .v-header-right{
+        width: 600px;
+        justify-content: space-between;
+        &>div{
+            color:rgba(155,155,155,1);
+        }
+        .el-link--inner{
+            font-size: 15px;
+            color: #71C9C0;
+        }      
+    }
+    .v-header-locationImg{
+        width: 16px;
+        height: 18px;
+    }
+    .v-header-loginStatus{
+        span{
+            color:black
+        }
+        color:rgba(48,48,48,1);
+        line-height: 78px;
+    }
+    .v-header-left{
+        color:rgba(155,155,155,1);
+        align-items: center;
+        &>.now-city{
+            display: inline-block;
+            padding: 0 10px;
+            color:black;
+        }
+    }
+}

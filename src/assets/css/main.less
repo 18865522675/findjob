@@ -1,0 +1,56 @@
+.flexItem(@dir:row){
+    display: flex;
+    flex-direction: @dir;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  }
+  .flex-r{
+    .flexItem(row);
+  }
+  .flex-r-c{
+      .flexItem(row);
+      align-items: center;
+  }
+  .flex-c{
+    .flexItem(column);
+  }
+  .marL10{
+    margin-left: 10px!important;
+  }
+  .marL20{
+    margin-left: 20px;
+  }
+  .marL30{
+    margin-left: 30px ;
+  }
+
+  .marT10{
+    margin-top: 10px;
+  }
+  .marT20{
+    margin-top: 20px;
+  }
+  .marT30{
+    margin-top: 30px;
+  }
+  .marT40{
+    margin-top: 40px;
+  }
+  .marT60{
+    margin-top: 60px;
+  }
+  .marT90{
+    margin-top: 90px;
+  }
+  .marB30{
+      margin-bottom: 30px;
+  }
+  .pointer{
+      cursor: pointer;
+  }
+  .lineH32{
+    line-height: 32px
+  }
