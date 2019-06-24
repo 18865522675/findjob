@@ -1,4 +1,8 @@
 .v-header{
+    position: static;
+    transition: all 2s;
+    background:white;
+    width:100%; 
     .v-header-center{
         font-size:16px;
         font-family:PingFang-SC-Regular;
@@ -13,15 +17,16 @@
         justify-content: space-between;
         &>div{
             color:rgba(155,155,155,1);
+            font-size: 18px;
         }
         .el-link--inner{
-            font-size: 15px;
+            font-size: 18px;
             color: #71C9C0;
         }      
     }
     .v-header-locationImg{
         width: 16px;
-        height: 18px;
+        height: 20px;
     }
     .v-header-loginStatus{
         span{
@@ -38,5 +43,6 @@
             padding: 0 10px;
             color:black;
         }
+        font-size:18px;
     }
 }

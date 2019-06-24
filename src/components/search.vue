@@ -1,7 +1,7 @@
 <template>
   <div class='v-search'>
       <div class="v-search-center flex-r">
-          <img src="../assets/images/zhaopinLogo.png" alt="">
+          <img src="../assets/images/zhaopinLogo.png" alt="" class="searchLogo">
           <div class="searchInp">
                <el-input placeholder="请输入内容"   clearable v-model="input">
                     <template slot="append"   @click="linkUrl()">
@@ -9,7 +9,7 @@
                     </template>
                 </el-input>
           </div>
-          <div>
+          <div style="margin-left: 10px;">
               <el-button type="default"   @click="linkUrl()">免费发布需求</el-button>
           </div>
           <span style="color:rgba(155,155,155,1)">或</span>

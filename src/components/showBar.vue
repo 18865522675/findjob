@@ -33,7 +33,7 @@
             </div>
             <div class="v-showBar-item"   @click="linkUrl()">
                 <div>
-                    <img src="../assets/images/quanbu.png" alt="">
+                    <img src="../assets/images/quanbu.png" alt="" class="marT10">
                 </div>
                 <span>全部分类</span>
             </div>
@@ -82,11 +82,11 @@ export default {
         };
         span{
             display: block;
-            font-weight: bold;
+            /*font-weight: bold;*/
             font-family:PingFang-SC-Medium;
             color:rgba(34,34,34,1);
-            font-size: 16px;
-            line-height: 40px;          
+            font-size: 18px;
+            margin-top: 20px;          
         }
     }
 }

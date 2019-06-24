@@ -6,6 +6,7 @@
         margin: 0 auto;
         justify-content: space-between;
         line-height: @Height68;
+        align-items: center;
     }
     .el-input__inner{
         height: @Height68!important;
@@ -14,13 +15,29 @@
         height: @Height68;
         background:rgba(113,201,192,1);
         color: white;
+        width: 155px;
+    }
+    .el-button{
+        span{
+            font-size: 17px;
+        }
     }
     .searchInp{
-        width: 600px;
+        width: 660px;
+
         .el-input-group__append{
             background:rgba(113,201,192,1);
             color: white;
+            width: 65px;
             cursor: pointer!important; 
+            font-size: 18px;
         }
+        .el-input__inner{
+            font-size: 17px;
+        }
+    }
+    .searchLogo{
+        height: 40px;
+        margin-left: 10px;
     }
 }

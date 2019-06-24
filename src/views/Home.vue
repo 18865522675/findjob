@@ -11,7 +11,7 @@
                 税务统筹
               </div>
               <span class="subTitle">
-                tax Penalty
+                Tax Penalty
               </span>
               <div class="rangeBox">
                 <div>
@@ -35,7 +35,7 @@
                 兼职平台
               </div>
               <span class="subTitle">
-                part-Time
+                Part-Time
               </span>
               <div class="rangeBox">
                 <div>
@@ -98,12 +98,12 @@
               </div>
             </div>
 
-            <div class="homeContent-left-item"   style="width:240px"   @click="linkUrl()">
+            <div class="homeContent-left-item"   style="width:260px"   @click="linkUrl()">
               <div class="bigTitle">
                 科技楼宇
               </div>
               <span class="subTitle">
-                technology
+                Technology
               </span>
               <div class="rangeBox">
                 <div>
@@ -126,7 +126,7 @@
                 广告咨询
               </div>
               <span class="subTitle">
-                advertisement
+                Advertisement
               </span>
               <div class="rangeBox">
                 <div>
@@ -152,7 +152,7 @@
                 智慧消防
               </div>
               <span class="subTitle">
-                fire Protection
+                Fire Protection
               </span>
               <div class="rangeBox">
                 <div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="v-header">
+  <div class="v-header" ref="vHeader">
       <div class="v-header-center flex-r-c">
           <div class="v-header-left flex-r">
               <img class="v-header-locationImg"  src="../assets/images/location.png" >
@@ -8,7 +8,7 @@
           </div>
           <div class="flex-r-c v-header-right">
               <div class="v-header-loginStatus">
-                  <span>未登陆 , </span>
+                  <span style="display: inline-block;margin-top: 2px;">未登陆 , </span>
                   <el-link type="success pointer"   @click="linkUrl()"> 免费注册 </el-link>
               </div>
               <div>
@@ -39,10 +39,23 @@ export default {
   watch:{},
   components:{},
   props:{},
-  computed:{},
+  computed:{
+  },
   methods:{},
   created(){},
-  mounted(){}
+  mounted(){
+  	const that=this;
+  	window.onscroll=function(){
+  		var t = Math.floor(document.documentElement.scrollTop || document.body.scrollTop);
+  		if(t>78){
+  			that.$nextTick(()=>{
+  				that.$refs.vHeader.style.position="fixed";
+  			})
+  		}else{
+  			that.$refs.vHeader.style.position="static";
+  		}
+  	}
+  }
 }
 </script>
 
