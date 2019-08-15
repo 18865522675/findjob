@@ -3,11 +3,11 @@
     <div class="v-footer-center flex-r">
         <div class="v-footer-item">
             <div>
-                咨询热线：0571-66666666
+                咨询热线：0316-2339995
             </div>
             <div class='marT60'>
                 <div>
-                    招聘者有限公司版权所有
+                    九九启航(天津)科技有限公司版权所有
                 </div>
                 <div>
                     Copyrigt 2012-2018 ALL Right Reserved
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="v-footer-item">
+        <!--<div class="v-footer-item">
             <div>
                 官方APP：招聘者
             </div>
@@ -31,7 +31,7 @@
                 <img src="../assets/images/code.jpg" alt="">
                 <span>招聘者公众号</span>
             </div>
-        </div>  
+        </div>  -->
     </div>
   </div>
 </template>

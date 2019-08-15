@@ -3,7 +3,7 @@
       <div class="v-header-center flex-r-c">
           <div class="v-header-left flex-r">
               <img class="v-header-locationImg"  src="../assets/images/location.png" >
-              <span class="now-city">杭州</span>
+              <span class="now-city">廊坊</span>
               <span class="choose-city pointer">[ 切换城市 ]</span>
           </div>
           <div class="flex-r-c v-header-right">
@@ -12,7 +12,7 @@
                   <el-link type="success pointer"   @click="linkUrl()"> 免费注册 </el-link>
               </div>
               <div>
-                  <el-badge :value="3" class="pointer">
+                  <el-badge  class="pointer">
                     <span size="small">消息</span>
                   </el-badge>
               </div>
@@ -45,16 +45,16 @@ export default {
   created(){},
   mounted(){
   	const that=this;
-  	window.onscroll=function(){
-  		var t = Math.floor(document.documentElement.scrollTop || document.body.scrollTop);
-  		if(t>78){
-  			that.$nextTick(()=>{
-  				that.$refs.vHeader.style.position="fixed";
-  			})
-  		}else{
-  			that.$refs.vHeader.style.position="static";
-  		}
-  	}
+//	window.onscroll=function(){
+//		var t = Math.floor(document.documentElement.scrollTop || document.body.scrollTop);
+//		if(t>78){
+//			that.$nextTick(()=>{
+//				that.$refs.vHeader.style.position="fixed";
+//			})
+//		}else{
+//			that.$refs.vHeader.style.position="static";
+//		}
+//	}
   }
 }
 </script>
